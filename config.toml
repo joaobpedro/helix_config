@@ -1,0 +1,37 @@
+# Wishlist
+# - buffer picker: easy switch to MRU buffer (space+f+enter)
+# - file tree
+# - eslinting?
+
+theme = "my_vesper"
+
+[editor]
+line-number = "relative"
+scrolloff = 5
+true-color = true
+rulers = [80]
+auto-format = true # not yet
+auto-completion = true
+cursorline = true
+cursorcolumn = true
+gutters = ["diagnostics", "line-numbers", "spacer", "diff"]
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render=true
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
