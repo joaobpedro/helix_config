@@ -56,13 +56,13 @@ keyword = { fg = "gray" }
 
 error = { fg = "red" }
 hint = { fg = "gray" }
-info = { fg = "white" }
+info = { fg = "white", bg= "red", modifiers = ["bold"] }
 warning = { fg = "beige" }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 "diagnostic.error" = { underline = { style = "curl", color = "red" } }
 "diagnostic.warning" = { underline = { style = "curl", color = "beige"} }
-"diagnostic.info" = { underline = { style = "curl", color = "white"} }
+"diagnostic.info" = { bright_green = { style = "curl", color = "white"} }
 "diagnostic.hint" = { underline = { style = "curl", color = "gray" } }
 
 # tabstop = { bg = "white" }
@@ -108,7 +108,7 @@ warning = { fg = "beige" }
 "ui.cursor" = { fg = "white", modifiers = ["reversed"] }
 
 [palette]
-red = "#ff8080"
+red = "#ff3434"
 gray = "#A0A0A0"
 white = "#ffffff"
 beige = "#ffc799"
