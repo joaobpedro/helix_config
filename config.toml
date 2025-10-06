@@ -3,7 +3,9 @@
 # - file tree
 # - eslinting?
 
-theme = "my_vesper"
+# theme = "my_vesper"
+# theme = "my_gruvbox_material_dark_medium"
+theme = "my_autumn"
 
 [editor]
 line-number = "relative"
@@ -15,6 +17,7 @@ auto-completion = true
 cursorline = true
 # cursorcolumn = true
 gutters = ["diagnostics", "line-numbers", "spacer", "diff"]
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -42,6 +45,20 @@ esc = ["collapse_selection", "keep_primary_selection"]
   "paste_before",
   "flip_selections",
 ] # Move line(s) up
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+# C-b = "@ b%id "
+
+# "C-A-[" = { d = "goto_prev_diag", D = "goto_first_diag", f = "goto_prev_function", c = "goto_prev_class", a = "goto_prev_parameter", o = "goto_prev_comment", p = "goto_prev_paragraph", space = "add_newline_above", t = "goto_prev_test"}
+# "C-A-]" = { d = "goto_next_diag", D = "goto_last_diag", f = "goto_next_function", c = "goto_next_class", a = "goto_next_parameter", o = "goto_next_comment", t = "goto_next_test",  p = "goto_next_paragraph", space = "add_newline_below" }
+
+
+# C-y = [
+#     ':sh del C:\yazi-path.txt',
+#     ':insert-output yazi.exe %{buffer_name} --chooser-file=C:\yazi-path.txt',
+#     ':open %sh{type C:\yazi-path.txt}',
+#     ':redraw'
+# ]
+
 
 
 

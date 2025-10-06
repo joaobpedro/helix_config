@@ -1,0 +1,12 @@
+[[language]]
+name = "twoif"
+scope = "source.twoif"
+injection-regex = "twoif|2if"
+file-types = ["2if", "twoif"]
+comment-token = "#"
+indent = { tab-width = 4, unit = "    " }
+grammar = "twoif"
+
+[[grammar]]
+name = "twoif"
+source={ git = "https://github.com/joaobpedro/tree-sitter-2if", rev  = "458e352e7dd2d88fb1e545710746fb872b8207bd"}
